@@ -53,7 +53,7 @@ for year in range(7, 9):
         else:
             bin.append(bin[0]/bin[1])
 
-    dfw = open(('/Users/alexchandy13/Downloads/scrape201%dpred.csv' % year), 'w')
+    dfw = open(('/Users/alexchandy13/PycharmProjects/bettingML/scrape201%dpred.csv' % year), 'w')
 
     for bin in bins:
         csv.writer(dfw).writerow(bin)

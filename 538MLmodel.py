@@ -8,7 +8,7 @@ import pickle
 import matplotlib.pyplot as pyplot
 from matplotlib import style
 
-data = pd.read_csv('/Users/alexchandy13/Downloads/condensed538data.csv', sep=",")
+data = pd.read_csv('/Users/alexchandy13/PycharmProjects/bettingML/condensed538data.csv', sep=",")
 print(data.head())
 
 predict = 'correct?'
@@ -25,7 +25,7 @@ acc = lm.score(x_test,y_test)
 print("Score: ", lm.score(x_test,y_test))
 print("y = ", lm.intercept_," + ", lm.coef_,"x")
 
-dfr = open('/Users/alexchandy13/Downloads/nfl-elo/nfl_elo.csv', 'r')
+dfr = open('/Users/alexchandy13/PycharmProjects/bettingML/nfl_elo.csv', 'r')
 fgames = []
 
 for row in csv.reader(dfr):

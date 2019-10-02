@@ -1,6 +1,6 @@
 import csv
 
-dfr = open('/Users/alexchandy13/Downloads/nfl-elo/nfl_elo.csv', 'r')
+dfr = open('/Users/alexchandy13/PycharmProjects/bettingML/nfl_elo.csv', 'r')
 
 count = 0
 games = []
@@ -103,7 +103,7 @@ for row in csv.reader(dfr):
     if not len(game) == 0:
         games.append(game)
 
-dfw = open('/Users/alexchandy13/Downloads/condensed538data.csv', 'w')
+dfw = open('/Users/alexchandy13/PycharmProjects/bettingML/condensed538data.csv', 'w')
 
 csv.writer(dfw).writerow(['date','season','hometeam','awayteam','elo1_pre','elo2_pre',
                           'elo_prob1','elo_prob2',
